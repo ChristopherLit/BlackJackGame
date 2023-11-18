@@ -42,5 +42,35 @@ export default class Deck {
 
     }
 
+    deal() {
+
+        if (this.isEmpty() == false) {
+
+            return this.cards.pop();
+            
+        } else {
+
+            //If deck is empty...
+            //Only worry about this when there's multiple players
+
+        }
+
+
+    }
+
+    isEmpty() {
+
+        if (this.cards.length == 0) {
+
+            return true;
+
+        } else {
+
+            return false;
+        }
+
+
+    }
+
 
 }
