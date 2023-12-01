@@ -1,5 +1,5 @@
-import Deck from './deck.js';
-import Player from './player.js';
+import Deck from './Deck.js';
+import Player from '../player.js';
 
 
 class Game {
@@ -8,9 +8,8 @@ class Game {
         this.deck = new Deck();
         this.user = new Player(); //The 1 player
         this.dealer = new Player() //Dealer
-        //this.players = []; //ONLY 1 PLAYER FOR NOW, ADD BOTS LATER
-        //this.currentPlayerIndex = 0; //ONLY 1 PLAYER, CHANGE WHEN MORE PLAYERS ARE ADDED
         this.round = 1;
+        this.currentAmount = this.user.getAmount();
     }
 
     startGame() {
@@ -37,8 +36,21 @@ class Game {
 
     }
 
-
     playRound() {
+
+        
+
+
+
+        
+
+
+
+
+
+
+
+
        
        
     }
@@ -47,4 +59,6 @@ class Game {
         
       
     }
+
+
 }

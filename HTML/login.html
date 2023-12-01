@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="ui1.css">
+    <script type="module" src="./Game.js" defer></script>
+    <link rel="icon" href="cards.png" type="image/x-icon"> 
+</head>
+
+<body>
+    <div id="sign-in-container">
+        <h1>SIGN IN</h1>
+    </p>
+        <label for="username">Email</label>
+    </p>
+        <input type="text" id="username" name="username">
+    </p>
+        <label for="password">Password</label>
+    </p>
+        <input type="password" id="password" name="password">
+    </p>
+        <button type="button" onclick="signIn()">Sign in</button>
+    </p>
+        <button type="button" onclick="showCreateAccount()">Create Account</button>
+    </div>
+
+    <div id="create-account-container" style="display: none;">
+        <h1>CREATE AN ACCOUNT</h1>
+    </p>
+        <label for="new-email">New Email</label>
+    </p>
+        <input type="text" id="new-email" name="new-email">
+    </p>
+        <label for="new-password">New Password</label>
+    </p>
+        <input type="password" id="new-password" name="new-password">
+    </p>
+        <button type="button" onclick="createAccount()">Create Account</button>
+        
+    </div>
+
+    <script>
+        function signIn() {
+            // Access the text entered by the user
+            var userName = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Check credentials, perform sign-in logic
+        }
+
+        function showCreateAccount() {
+            // Hide sign-in container
+            document.getElementById('sign-in-container').style.display = 'none';
+            // Show create account container
+            document.getElementById('create-account-container').style.display = 'block';
+        }
+
+        function createAccount() {
+            // Access the text entered by the user for account creation
+            var newEmail = document.getElementById('new-email').value;
+            var newPassword = document.getElementById('new-password').value;
+
+            //PUT CREDIENTIALS INTO MONGO DB, IF EMAIL ALREADY THERE, DISPLAY THAT THE EMAIL IS ALREADY BEING USED
+        }
+    </script>
+</body>
+
+</html>

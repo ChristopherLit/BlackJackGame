@@ -1,8 +1,9 @@
 
 export default class Player {
-    constructor(name) {
-        this.name = name;
+    constructor(name, amount) {
+        this.name = "Christopher"; //(HARDCODED)
         this.hand = []; 
+        this.amount = 500; //Amount of money from MongoDB (HARDCODED)
     }
 
     
@@ -43,6 +44,23 @@ export default class Player {
         }
 
         return total;
+    }
+
+    getAmount() {
+
+        return this.amount;
+    }
+
+    makeBet(bettingAmount) {
+
+        this.amount = this.amount - bettingAmount;
+
+    }
+
+    increaseAmount(winningAmount) {
+
+        this.amount = this.amount + winningAmount;
+
     }
 
 }
